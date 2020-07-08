@@ -10,4 +10,4 @@
        command: 'docker pull 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
                             
     -  name: start docker container
-       command: 'docker run --name myng3 -itd -p 83:80 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
+       command: 'docker run --name myng -itd -p 80:80 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
