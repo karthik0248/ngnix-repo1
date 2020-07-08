@@ -3,7 +3,7 @@ pipeline {
    stages {
      stage('pull repo'){
     	steps {
-          git 'https://gitlab.com/jagarlamudirajesh34/ngnix-repo1.git'
+          git 'https://github.com/karthik0248/ngnix-repo1.git'
         }
      }
      stage('pull master'){
