@@ -7,7 +7,7 @@
        command: 'aws ecr get-login --no-include-email'
        
     -  name: pull images
-       command: 'docker pull 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
+       command: 'docker pull 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'     
                             
     -  name: start docker container
-       command: 'docker run --name myng12 -itd -p 92:80 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
+       command: 'docker run --name myng13 -itd -p 93:80 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
