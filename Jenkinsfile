@@ -27,8 +27,8 @@ pipeline {
        steps{
           sh 'docker build -t myng:1 .'
           sh '$(aws ecr get-login --no-include-email)'
-          sh 'docker tag myng:1 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
-          sh 'docker push 587589636093.dkr.ecr.us-east-1.amazonaws.com/nginx:1'
+          sh 'docker tag myng:1 587589636093.dkr.ecr.us-east-1.amazonaws.com/myng:1'
+          sh 'docker push 587589636093.dkr.ecr.us-east-1.amazonaws.com/myng:1'
        }
      }
      stage('ping to docker'){
